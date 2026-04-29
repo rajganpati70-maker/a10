@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Splash icon: 2048x2048 logo on transparent (Expo composites with bgcolor). -->
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="2048" viewBox="0 0 2048 2048">
+  <defs>
+    <linearGradient id="holo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#00F0FF"/>
+      <stop offset="28%"  stop-color="#7A5BFF"/>
+      <stop offset="55%"  stop-color="#FF3FA4"/>
+      <stop offset="80%"  stop-color="#FF8A3D"/>
+      <stop offset="100%" stop-color="#FFD83D"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFD83D"/>
+      <stop offset="50%"  stop-color="#FF3FA4"/>
+      <stop offset="100%" stop-color="#7A5BFF"/>
+    </linearGradient>
+    <linearGradient id="holoSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#FFF1A8"/>
+      <stop offset="50%"  stop-color="#FFC93D"/>
+      <stop offset="100%" stop-color="#A6750C"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+
+  <g transform="translate(1024 980)">
+    <circle r="540" fill="#7A5BFF" opacity="0.35" filter="url(#glow)"/>
+    <circle r="420" fill="#FF3FA4" opacity="0.40" filter="url(#glow)"/>
+    <polygon points="0,-540 468,-270 468,270 0,540 -468,270 -468,-270"
+             fill="none" stroke="url(#ring)" stroke-width="22" stroke-linejoin="round"/>
+    <polygon points="0,-450 390,-225 390,225 0,450 -390,225 -390,-225"
+             fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.20)" stroke-width="3"/>
+    <g transform="scale(1.5)">
+      <path d="M -200 -200 L -120 -200 L 0 -50 L 120 -200 L 200 -200 L 60 -10 L 200 180 L 120 180 L 0 30 L -120 180 L -200 180 L -60 -10 Z"
+            fill="url(#holo)"/>
+      <path d="M -200 -200 L -120 -200 L 0 -50 L 120 -200 L 200 -200 L 60 -10 L 200 180 L 120 180 L 0 30 L -120 180 L -200 180 L -60 -10 Z"
+            fill="url(#holoSheen)" opacity="0.6"/>
+    </g>
+    <circle r="68" fill="#0B0820" stroke="url(#holo)" stroke-width="6"/>
+    <polygon points="-18,-26 32,0 -18,26" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Wordmark below -->
+  <g transform="translate(1024 1640)">
+    <text x="0" y="0" text-anchor="middle"
+          font-family="Helvetica, Arial, sans-serif" font-weight="900"
+          font-size="120" letter-spacing="6" fill="url(#holo)">CreatorX</text>
+    <g transform="translate(0 110)">
+      <rect x="-260" y="-50" width="520" height="100" rx="50" ry="50"
+            fill="rgba(11,8,32,0.0)" stroke="url(#gold)" stroke-width="4"/>
+      <text x="0" y="14" text-anchor="middle"
+            font-family="Helvetica, Arial, sans-serif" font-weight="900"
+            font-size="52" letter-spacing="14" fill="url(#gold)">ULTRA PRO</text>
+    </g>
+  </g>
+</svg>

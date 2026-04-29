@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1200" viewBox="0 0 2400 1200">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%">
+      <stop offset="0%"  stop-color="#1B1140"/>
+      <stop offset="100%" stop-color="#03010A"/>
+    </radialGradient>
+    <linearGradient id="holo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#00F0FF"/>
+      <stop offset="28%"  stop-color="#7A5BFF"/>
+      <stop offset="55%"  stop-color="#FF3FA4"/>
+      <stop offset="80%"  stop-color="#FF8A3D"/>
+      <stop offset="100%" stop-color="#FFD83D"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFD83D"/>
+      <stop offset="50%"  stop-color="#FF3FA4"/>
+      <stop offset="100%" stop-color="#7A5BFF"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#FFF1A8"/>
+      <stop offset="50%"  stop-color="#FFC93D"/>
+      <stop offset="100%" stop-color="#A6750C"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="2400" height="1200" fill="url(#bg)"/>
+  <g stroke="#FFFFFF" stroke-opacity="0.05" stroke-width="1">
+    <path d="M0 300 H2400 M0 600 H2400 M0 900 H2400 M600 0 V1200 M1200 0 V1200 M1800 0 V1200"/>
+  </g>
+  <g transform="translate(700 600)">
+    <circle r="430" fill="#7A5BFF" opacity="0.40" filter="url(#glow)"/>
+    <circle r="320" fill="#FF3FA4" opacity="0.45" filter="url(#glow)"/>
+    <polygon points="0,-400 346,-200 346,200 0,400 -346,200 -346,-200"
+             fill="none" stroke="url(#ring)" stroke-width="16" stroke-linejoin="round"/>
+    <polygon points="0,-340 295,-170 295,170 0,340 -295,170 -295,-170"
+             fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+    <g transform="scale(1.15)">
+      <path d="M -200 -200 L -120 -200 L 0 -50 L 120 -200 L 200 -200 L 60 -10 L 200 180 L 120 180 L 0 30 L -120 180 L -200 180 L -60 -10 Z"
+            fill="url(#holo)"/>
+    </g>
+    <circle r="50" fill="#0B0820" stroke="url(#holo)" stroke-width="5"/>
+    <polygon points="-14,-20 26,0 -14,20" fill="#FFFFFF"/>
+  </g>
+  <!-- Wordmark -->
+  <g transform="translate(1300 460)">
+    <text x="0" y="0" font-family="Helvetica, Arial, sans-serif" font-weight="900"
+          font-size="180" letter-spacing="-2" fill="url(#holo)">CreatorX</text>
+    <text x="0" y="160" font-family="Helvetica, Arial, sans-serif" font-weight="700"
+          font-size="64" letter-spacing="6" fill="#FFFFFF" opacity="0.85">The Ultimate Creator Studio</text>
+    <g transform="translate(0 280)">
+      <rect x="0" y="0" width="540" height="110" rx="55" ry="55"
+            fill="rgba(11,8,32,0.6)" stroke="url(#gold)" stroke-width="4"/>
+      <text x="270" y="74" text-anchor="middle"
+            font-family="Helvetica, Arial, sans-serif" font-weight="900"
+            font-size="58" letter-spacing="16" fill="url(#gold)">ULTRA PRO</text>
+    </g>
+  </g>
+</svg>
