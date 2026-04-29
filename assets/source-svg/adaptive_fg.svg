@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Adaptive icon foreground: 1024x1024 with content in inner 66% safe zone -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="holo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#00F0FF"/>
+      <stop offset="28%"  stop-color="#7A5BFF"/>
+      <stop offset="55%"  stop-color="#FF3FA4"/>
+      <stop offset="80%"  stop-color="#FF8A3D"/>
+      <stop offset="100%" stop-color="#FFD83D"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFD83D"/>
+      <stop offset="50%"  stop-color="#FF3FA4"/>
+      <stop offset="100%" stop-color="#7A5BFF"/>
+    </linearGradient>
+    <linearGradient id="holoSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <!-- safe area inner 66% = 338..686, center 512 -->
+  <g transform="translate(512 512) scale(0.62)">
+    <!-- glow halo -->
+    <circle r="320" fill="#7A5BFF" opacity="0.45" filter="url(#glow)"/>
+    <circle r="240" fill="#FF3FA4" opacity="0.45" filter="url(#glow)"/>
+    <!-- hex -->
+    <polygon points="0,-360 312,-180 312,180 0,360 -312,180 -312,-180"
+             fill="none" stroke="url(#ring)" stroke-width="18" stroke-linejoin="round"/>
+    <polygon points="0,-300 260,-150 260,150 0,300 -260,150 -260,-150"
+             fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.20)" stroke-width="3"/>
+    <!-- X -->
+    <path d="M -200 -200 L -120 -200 L 0 -50 L 120 -200 L 200 -200 L 60 -10 L 200 180 L 120 180 L 0 30 L -120 180 L -200 180 L -60 -10 Z"
+          fill="url(#holo)"/>
+    <path d="M -200 -200 L -120 -200 L 0 -50 L 120 -200 L 200 -200 L 60 -10 L 200 180 L 120 180 L 0 30 L -120 180 L -200 180 L -60 -10 Z"
+          fill="url(#holoSheen)" opacity="0.6"/>
+    <!-- play core -->
+    <circle r="46" fill="#0B0820" stroke="url(#holo)" stroke-width="5"/>
+    <polygon points="-12,-18 22,0 -12,18" fill="#FFFFFF"/>
+  </g>
+</svg>

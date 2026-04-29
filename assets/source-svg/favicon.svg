@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="holo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#00F0FF"/>
+      <stop offset="40%"  stop-color="#7A5BFF"/>
+      <stop offset="70%"  stop-color="#FF3FA4"/>
+      <stop offset="100%" stop-color="#FFD83D"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFD83D"/>
+      <stop offset="50%"  stop-color="#FF3FA4"/>
+      <stop offset="100%" stop-color="#7A5BFF"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="40%" r="80%">
+      <stop offset="0%"  stop-color="#1B1140"/>
+      <stop offset="100%" stop-color="#03010A"/>
+    </radialGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" ry="56" fill="url(#bg)"/>
+  <g transform="translate(128 128)">
+    <polygon points="0,-92 80,-46 80,46 0,92 -80,46 -80,-46"
+             fill="none" stroke="url(#ring)" stroke-width="6" stroke-linejoin="round"/>
+    <g transform="scale(0.34)">
+      <path d="M -200 -200 L -120 -200 L 0 -50 L 120 -200 L 200 -200 L 60 -10 L 200 180 L 120 180 L 0 30 L -120 180 L -200 180 L -60 -10 Z"
+            fill="url(#holo)"/>
+    </g>
+  </g>
+</svg>
