@@ -35,6 +35,11 @@
       "name": "CreatorX Ultra Pro",
       "themeColor": "#7A5BFF",
       "backgroundColor": "#03010A"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e0fb59b3-4fbb-4065-8e5e-ed689ad46ff5"
+      }
     }
   }
 }
